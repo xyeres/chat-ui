@@ -63,5 +63,13 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.userMenuToggle {
+  color: black;
+  font-family: FontAwesome;
+}
+
+.message__userImage {
+  max-width: 2.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
