@@ -1,0 +1,10 @@
+@use '../base/colors';
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$screenBackground;
+  padding: 1rem;
+  border-radius: 14px;
+  // box-shadow: 20px 1px 1px 10px #ddd;
+}

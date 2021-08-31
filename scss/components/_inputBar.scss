@@ -1,0 +1,60 @@
+@use '../base/colors';
+
+
+.inputBar {
+
+  border-top: solid 1px colors.$borderLightGray;
+  padding-top: 1rem;
+
+  &__form {
+    display: flex;
+    max-height: 2.25rem;
+  }
+
+  &__input {
+    flex: 1;
+    width: 80%;
+    padding-left: 9px;
+    border: solid 1px colors.$asideFont;
+    border-radius: 100px;
+
+
+  }
+
+  &__input:focus {
+    outline: none;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: dashed 3px colors.$lightPurple;
+  }
+
+
+  &__btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: colors.$purple;
+    color: colors.$btnFont;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    max-width: 90px;
+    margin-left: 0.5rem;
+    width: 20%;
+
+    &:hover {
+      background: colors.$lightPurple;
+
+    }
+  }
+
+  &__btn:focus {
+    outline: dashed 3px colors.$lightPurple;
+    outline-width: 2;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}

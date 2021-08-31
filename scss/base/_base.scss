@@ -1,0 +1,9 @@
+@use 'colors';
+
+html {
+  background-color: colors.$bodyBackground;
+}
+
+body {
+  padding: 1.1rem;
+}

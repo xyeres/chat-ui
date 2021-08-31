@@ -1,0 +1,22 @@
+@use '../base/colors';
+
+.messages {
+  margin-top: 0.5rem;
+  overflow: auto;
+  padding-right: 0.45rem;
+  max-height: 79vh;
+  background-color: colors.$messagesBackground;
+
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: colors.$borderLightGray
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: colors.$lightPurple;
+    border-radius: 40px;
+  }
+}

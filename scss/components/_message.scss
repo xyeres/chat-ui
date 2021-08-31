@@ -1,6 +1,40 @@
 @use '../base';
+@use '../base/colors';
 
 
-.message__userImage {
-  max-width: 2.5rem;
+.message {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 1.125rem;
+
+  &__userImage {
+    // max-width: 50px;
+    max-height: 50px;
+    margin-right: .6rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: colors.$asideFont;
+  }
+
+  &__text {
+    font-size: 0.75em;
+  }
+
+  &__userName {
+    font-size: 0.85em;
+    padding-right: .4rem;
+    font-weight: 500;
+  }
+
+  &__timestamp {
+    font-size: .69em;
+  }
+
+  &__userImage {
+    max-width: 2.5rem;
+  }
 }

@@ -1,4 +1,18 @@
-.userMenuToggle {
-  color: black;
-  font-family: FontAwesome;
+@use '../base/colors';
+
+.infoBar {
+  padding: 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px colors.$borderLightGray;
+  padding-bottom: 0.72rem;
+
+  &__userMenuToggle {
+    color: colors.$purple;
+  }
+
+  &__title {
+    font-size: 1.25em;
+    color: colors.$headingFont;
+  }
 }
