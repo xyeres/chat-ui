@@ -3,3 +3,13 @@
 html {
   background-color: colors.$bodyBackground;
 }
+
+.d-none {
+  position: absolute;
+  opacity: 0;
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}

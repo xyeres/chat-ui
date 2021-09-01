@@ -64,7 +64,17 @@ select {
   }
 }
 html {
-  background-color: #f4f3f8;
+  background-color: #fffdff;
+}
+
+.d-none {
+  position: absolute;
+  opacity: 0;
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 body {
@@ -149,6 +159,11 @@ body {
   align-items: flex-start;
   padding-bottom: 1.125rem;
 }
+.message__onlineIcon {
+  padding-left: 4px;
+  padding-bottom: 1px;
+  display: inline;
+}
 .message__userImage {
   max-height: 50px;
   margin-right: 0.6rem;
@@ -190,6 +205,40 @@ body {
 .messages::-webkit-scrollbar-thumb {
   background: #8e55f0;
   border-radius: 40px;
+}
+
+.userMenu {
+  min-width: 140px;
+  margin: 2rem;
+  transition: opacity 150ms linear;
+}
+.userMenu__activeMenu {
+  position: static;
+  opacity: 1;
+  margin-left: -20%;
+  border-right: solid 2px #eeeef0;
+}
+.userMenu__heading {
+  color: #a0a3a8;
+}
+
+.activeUsers {
+  margin-left: 0px;
+  padding: 0;
+}
+.activeUsers__heading {
+  text-transform: uppercase;
+  font-size: 0.78em;
+  font-weight: 900;
+}
+.activeUsers__onlineIcon {
+  padding-right: 4px;
+  padding-bottom: 2px;
+  display: inline;
+}
+.activeUsers__user {
+  list-style: none;
+  padding: 0.45rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

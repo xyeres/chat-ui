@@ -1,0 +1,41 @@
+@use '../base/colors';
+
+.userMenu {
+  min-width: 140px;
+  margin: 2rem;
+  transition: opacity 150ms linear;
+
+  &__activeMenu {
+    position: static;
+    opacity: 1;
+    margin-left: -20%;
+    border-right: solid 2px colors.$borderLightGray;
+  }
+
+  &__heading {
+    color: colors.$asideFont;
+  }
+}
+
+.activeUsers {
+  margin-left: 0px;
+  padding: 0;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 0.78em;
+    font-weight: 900;
+  }
+
+  &__onlineIcon {
+    padding-right: 4px;
+    padding-bottom: 2px;
+    display: inline;
+  }
+
+  &__user {
+    list-style: none;
+    padding: 0.45rem 0;
+  }
+
+}
