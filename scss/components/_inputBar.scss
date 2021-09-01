@@ -3,12 +3,12 @@
 
 .inputBar {
   position: sticky;
-  width: 100%;
   bottom: 0px;
-  background-color: white;
-  border-top: solid 1px colors.$borderLightGray;
+  margin: 0 0.5rem;
   padding: 1rem 0;
-  margin-bottom: 18px;
+  background-color: colors.$inputBarBackground;
+  border-top: solid 1px colors.$borderLightGray;
+
 
   &__form {
     display: flex;
@@ -18,9 +18,9 @@
   &__input {
     flex: 1;
     width: 80%;
-    margin-left: 9px;
     border: solid 1px colors.$asideFont;
     border-radius: 100px;
+    padding-left: 0.625rem;
   }
 
   &__input:focus {
@@ -42,10 +42,8 @@
     display: inline-block;
     border: none;
     border-radius: 100px;
-    max-width: 90px;
+    max-width: 86px;
     margin-left: 0.5rem;
-    margin-right: 9px;
-
     width: 20%;
 
     &:hover {
