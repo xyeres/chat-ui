@@ -68,18 +68,17 @@ html {
 }
 
 body {
-  overflow: hidden;
   position: relative;
 }
-
-.d-none {
-  position: absolute;
-  opacity: 0;
+body::-webkit-scrollbar {
+  width: 0.2rem;
 }
-
-.outerContainer {
-  display: flex;
-  flex-direction: row-reverse;
+body::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+body::-webkit-scrollbar-thumb {
+  background: #8e55f0;
+  border-radius: 40px;
 }
 
 body {
@@ -91,21 +90,16 @@ body {
 
 .screen {
   position: relative;
-  display: flex;
-  max-height: 90%;
-  flex-direction: column;
   background-color: #ffffff;
-  padding: 1rem;
 }
 
 .inputBar {
   position: sticky;
-  width: 100%;
   bottom: 0px;
+  margin: 0 0.5rem;
+  padding: 1rem 0;
   background-color: white;
   border-top: solid 1px #eeeef0;
-  padding: 1rem 0;
-  margin-bottom: 18px;
 }
 .inputBar__form {
   display: flex;
@@ -114,9 +108,9 @@ body {
 .inputBar__input {
   flex: 1;
   width: 80%;
-  margin-left: 9px;
   border: solid 1px #a0a3a8;
   border-radius: 100px;
+  padding-left: 0.625rem;
 }
 .inputBar__input:focus {
   outline: none;
@@ -135,9 +129,8 @@ body {
   display: inline-block;
   border: none;
   border-radius: 100px;
-  max-width: 90px;
+  max-width: 86px;
   margin-left: 0.5rem;
-  margin-right: 9px;
   width: 20%;
 }
 .inputBar__btn:hover {
@@ -152,11 +145,14 @@ body {
 }
 
 .infoBar {
-  padding: 0 0.25rem;
+  position: sticky;
+  top: 0;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #eeeef0;
   padding-bottom: 0.72rem;
+  background-color: #fafafa;
 }
 .infoBar__userMenuToggle {
   color: #5e1eca;
@@ -190,7 +186,7 @@ body {
   font-size: 1rem;
 }
 .message__userName {
-  font-size: 0.85em;
+  font-size: 0.95em;
   padding-right: 0.4rem;
   font-weight: 500;
 }
@@ -202,22 +198,8 @@ body {
 }
 
 .messages {
-  height: 90%;
-  overflow: auto;
-  margin-bottom: 3rem;
-  padding-top: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem 1.5rem 0 1rem;
   background-color: #fffdff;
-}
-.messages::-webkit-scrollbar {
-  width: 0.2rem;
-}
-.messages::-webkit-scrollbar-track {
-  background: #eeeef0;
-}
-.messages::-webkit-scrollbar-thumb {
-  background: #8e55f0;
-  border-radius: 40px;
 }
 
 .userMenu {
