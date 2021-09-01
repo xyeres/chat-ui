@@ -84,7 +84,6 @@ body::-webkit-scrollbar-thumb {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.28rem;
   color: #5a5d62;
 }
 
@@ -184,9 +183,6 @@ body {
   align-items: center;
   color: #a0a3a8;
 }
-.message__text {
-  font-size: 1rem;
-}
 .message__userName {
   font-size: 0.95em;
   padding-right: 0.4rem;
@@ -205,18 +201,32 @@ body {
 }
 
 .userMenu {
-  min-width: 140px;
-  margin: 2rem;
-  transition: opacity 150ms linear;
+  position: fixed;
+  top: 0;
+  right: -260px;
+  transition: all 85ms linear;
+  min-width: 260px;
+  height: 100%;
+  padding: 1.5rem;
+  color: #eeeef0;
+  background-color: #5e1eca;
+  border-radius: 14px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 1;
 }
-.userMenu__activeMenu {
-  position: static;
+.userMenu--active {
+  right: 0px;
+}
+
+.dim {
+  z-index: 0;
   opacity: 1;
-  margin-left: -20%;
-  border-right: solid 2px #eeeef0;
+  transition: all 85ms linear;
 }
-.userMenu__heading {
-  color: #a0a3a8;
+.dim--active {
+  z-index: 0;
+  opacity: 0.4;
 }
 
 .activeUsers {
@@ -228,6 +238,12 @@ body {
   font-size: 0.78em;
   font-weight: 900;
 }
+.activeUsers__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25em;
+  color: #eeeef0;
+}
 .activeUsers__onlineIcon {
   padding-right: 4px;
   padding-bottom: 2px;
@@ -235,7 +251,7 @@ body {
 }
 .activeUsers__user {
   list-style: none;
-  padding: 0.45rem 0;
+  padding: 0.65rem 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

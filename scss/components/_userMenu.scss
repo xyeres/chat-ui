@@ -1,19 +1,33 @@
 @use '../base/colors';
 
 .userMenu {
-  min-width: 140px;
-  margin: 2rem;
-  transition: opacity 150ms linear;
+  position: fixed;
+  top: 0;
+  right: -260px;
+  transition: all 85ms linear;
+  min-width: 260px;
+  height: 100%;
+  padding: 1.5rem;
+  color: colors.$borderLightGray;
+  background-color: colors.$purple;
+  border-radius: 14px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 1;
 
-  &__activeMenu {
-    position: static;
-    opacity: 1;
-    margin-left: -20%;
-    border-right: solid 2px colors.$borderLightGray;
+  &--active {
+    right: 0px;
   }
+}
 
-  &__heading {
-    color: colors.$asideFont;
+.dim {
+  z-index: 0;
+  opacity: 1;
+  transition: all 85ms linear;
+
+  &--active {
+    z-index: 0;
+    opacity: .4;
   }
 }
 
@@ -27,6 +41,13 @@
     font-weight: 900;
   }
 
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    color: colors.$borderLightGray;
+  }
+
   &__onlineIcon {
     padding-right: 4px;
     padding-bottom: 2px;
@@ -35,7 +56,7 @@
 
   &__user {
     list-style: none;
-    padding: 0.45rem 0;
+    padding: 0.65rem 0 0 0;
   }
 
 }

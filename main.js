@@ -1,16 +1,19 @@
-const menuIcon = document.querySelector('.infoBar__userMenuToggle');
-const screenContainer = document.querySelector('.screenContainer');
+const menuOpen = document.querySelector('#menuOpen');
+const menuClose = document.querySelector('#menuClose');
 const userMenu = document.querySelector('.userMenu');
 const messages = document.querySelector('.messages');
+const dim = document.querySelector('.dim');
+
 
 const toggleMenu = () => {
-  screenContainer.classList.toggle('userMenu__activeMenu');
-  userMenu.classList.toggle('d-none')
+  userMenu.classList.toggle('userMenu--active')
+  dim.classList.toggle('dim--active');
 }
 
-menuIcon.onclick = () => toggleMenu();
+menuOpen.onclick = () => toggleMenu();
+menuClose.onclick = () => toggleMenu();
 messages.onclick = () => {
-  if (screenContainer.classList.contains('userMenu__activeMenu')) {
+  if (userMenu.classList.contains('userMenu--active')) {
     toggleMenu();
   }
 }
