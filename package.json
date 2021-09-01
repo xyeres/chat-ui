@@ -1,5 +1,23 @@
 {
   "devDependencies": {
     "sass": "^1.38.2"
-  }
+  },
+  "scripts": {
+    "start": "sass --watch scss:css"
+  },
+  "name": "chat-ui",
+  "description": "A clean chat user interface written in semantic HTML and SASS",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyeres/chat-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xyeres/chat-ui/issues"
+  },
+  "homepage": "https://github.com/xyeres/chat-ui#readme"
 }
