@@ -7,21 +7,34 @@
 @include for-tablet-portrait-up {
 
   .containerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 70%;
   }
 
-  .messages {
-    max-width: 900px;
-  }
+  .messages {}
 
   .screen {
     min-height: unset;
   }
 
   .inputBar {
-    align-self: flex-start;
-    min-width: 700px;
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+  }
+
+  .userMenu {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    transition: all 105ms linear;
+    min-width: 260px;
+    height: 100%;
+    padding: 1.5rem;
+    border: solid 1px lightgrey;
+    border-radius: 14px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    z-index: 1;
   }
 }
