@@ -93,8 +93,13 @@ body {
 }
 
 .inputBar {
+  position: absolute;
+  width: 95%;
+  bottom: 5px;
+  background-color: white;
   border-top: solid 1px #eeeef0;
   padding-top: 1rem;
+  padding-bottom: 10px;
 }
 .inputBar__form {
   display: flex;
@@ -175,7 +180,7 @@ body {
   color: #a0a3a8;
 }
 .message__text {
-  font-size: 0.75em;
+  font-size: 1rem;
 }
 .message__userName {
   font-size: 0.85em;
@@ -194,6 +199,7 @@ body {
   height: 100%;
   overflow: auto;
   padding-right: 0.45rem;
+  margin-bottom: 3rem;
   background-color: #fffdff;
 }
 .messages::-webkit-scrollbar {
