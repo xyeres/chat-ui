@@ -1,0 +1,35 @@
+@use '../base/colors';
+
+.logo {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.45em;
+  color: colors.$purple;
+
+  &__title {
+    margin-right: auto;
+    font-weight: 900;
+  }
+
+  &__icon {
+    color: colors.$white;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 900px;
+    background-color: colors.$purple;
+  }
+
+  &__btn {
+    color: colors.$bodyFont;
+  }
+
+  &__btn:hover {
+    color: colors.$lightPurple;
+  }
+
+  &__icon:hover {
+    box-shadow: 0px 1px 16px 2px rgb(255, 240, 23)
+  }
+}

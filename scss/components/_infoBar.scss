@@ -12,6 +12,10 @@
 
   &__userMenuToggle {
     font-size: 1.25em;
+    color: colors.$bodyFont;
+  }
+
+  &__userMenuToggle:hover {
     color: colors.$purple;
   }
 
