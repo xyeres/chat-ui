@@ -1,0 +1,27 @@
+@mixin for-tablet-portrait-up {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
+@include for-tablet-portrait-up {
+
+  .containerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .messages {
+    max-width: 900px;
+  }
+
+  .screen {
+    min-height: unset;
+  }
+
+  .inputBar {
+    align-self: flex-start;
+    min-width: 700px;
+  }
+}

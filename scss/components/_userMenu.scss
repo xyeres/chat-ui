@@ -53,11 +53,17 @@
   padding-bottom: 1.125rem;
 
   &__onlineIcon {
-    height: 20px;
-    right: -3px;
-    top: 22px;
     position: absolute;
+    right: -1px;
+    top: 25px;
     color: colors.$green;
+    border: 2px solid rgb(255, 255, 255);
+    height: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 12px;
+    background-color: colors.$green;
   }
 
   &__userImage {

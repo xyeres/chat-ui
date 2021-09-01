@@ -156,7 +156,7 @@ body {
 }
 .infoBar__userMenuToggle {
   font-size: 1.25em;
-  color: #5a5d62;
+  color: #474c50;
 }
 .infoBar__userMenuToggle:hover {
   color: #5e1eca;
@@ -252,11 +252,17 @@ body {
   padding-bottom: 1.125rem;
 }
 .user__onlineIcon {
-  height: 20px;
-  right: -3px;
-  top: 22px;
   position: absolute;
+  right: -1px;
+  top: 25px;
   color: #69f0ae;
+  border: 2px solid white;
+  height: 12px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 12px;
+  background-color: #69f0ae;
 }
 .user__userImage {
   position: relative;
@@ -304,6 +310,27 @@ body {
 }
 .logo__icon:hover {
   transform: rotate(720deg);
+}
+
+@media (min-width: 800px) {
+  .containerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .messages {
+    max-width: 900px;
+  }
+
+  .screen {
+    min-height: unset;
+  }
+
+  .inputBar {
+    align-self: flex-start;
+    min-width: 700px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

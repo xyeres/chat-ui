@@ -5,13 +5,13 @@
 }
 
 @mixin for-large-phone-up {
-  @media (max-width: 795px) {
+  @media (max-width: 695px) {
     @content;
   }
 }
 
 @mixin for-tablet-portrait-up {
-  @media (min-width: 720px) {
+  @media (min-width: 800px) {
     @content;
   }
 }
