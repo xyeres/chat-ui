@@ -5,16 +5,18 @@ html {
 }
 
 body {
-  overflow: hidden;
   position: relative;
-}
 
-.d-none {
-  position: absolute;
-  opacity: 0;
-}
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+  }
 
-.outerContainer {
-  display: flex;
-  flex-direction: row-reverse;
+  &::-webkit-scrollbar-track {
+    background: colors.$infoBarBackground;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: colors.$lightPurple;
+    border-radius: 40px;
+  }
 }
