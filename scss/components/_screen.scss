@@ -2,9 +2,5 @@
 
 .screen {
   position: relative;
-  display: flex;
-  max-height: 90%;
-  flex-direction: column;
   background-color: colors.$screenBackground;
-  padding: 1rem;
 }
