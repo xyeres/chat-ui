@@ -1,11 +1,14 @@
 @use '../base/colors';
 
 .infoBar {
-  padding: 0 0.25rem;
+  position: sticky;
+  top: 0;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px colors.$borderLightGray;
   padding-bottom: 0.72rem;
+  background-color: colors.$infoBarBackground;
 
   &__userMenuToggle {
     color: colors.$purple;
