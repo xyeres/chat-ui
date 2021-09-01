@@ -19,6 +19,7 @@
     margin-right: 6px;
     border-radius: 900px;
     background-color: colors.$purple;
+    transition: 410ms transform ease-in-out;
   }
 
   &__btn {
@@ -30,6 +31,6 @@
   }
 
   &__icon:hover {
-    box-shadow: 0px 1px 16px 2px rgb(255, 240, 23)
+    transform: rotate(720deg)
   }
 }

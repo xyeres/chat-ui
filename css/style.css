@@ -294,6 +294,7 @@ body {
   margin-right: 6px;
   border-radius: 900px;
   background-color: #5e1eca;
+  transition: 410ms transform ease-in-out;
 }
 .logo__btn {
   color: #5a5d62;
@@ -302,7 +303,7 @@ body {
   color: #8e55f0;
 }
 .logo__icon:hover {
-  box-shadow: 0px 1px 16px 2px #fff017;
+  transform: rotate(720deg);
 }
 
 /*# sourceMappingURL=style.css.map */
