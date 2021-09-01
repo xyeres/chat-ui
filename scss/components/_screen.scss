@@ -1,8 +1,9 @@
 @use '../base/colors';
 
 .screen {
+  position: relative;
   display: flex;
-  height: 100vh;
+  max-height: 90%;
   flex-direction: column;
   background-color: colors.$screenBackground;
   padding: 1rem;

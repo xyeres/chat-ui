@@ -2,13 +2,13 @@
 
 
 .inputBar {
-  position: absolute;
-  width: 95%;
-  bottom: 5px;
+  position: sticky;
+  width: 100%;
+  bottom: 0px;
   background-color: white;
   border-top: solid 1px colors.$borderLightGray;
-  padding-top: 1rem;
-  padding-bottom: 10px;
+  padding: 1rem 0;
+  margin-bottom: 18px;
 
   &__form {
     display: flex;
@@ -18,7 +18,7 @@
   &__input {
     flex: 1;
     width: 80%;
-    padding-left: 9px;
+    margin-left: 9px;
     border: solid 1px colors.$asideFont;
     border-radius: 100px;
   }
@@ -44,6 +44,8 @@
     border-radius: 100px;
     max-width: 90px;
     margin-left: 0.5rem;
+    margin-right: 9px;
+
     width: 20%;
 
     &:hover {

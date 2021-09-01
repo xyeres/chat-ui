@@ -5,7 +5,7 @@ const messages = document.querySelector('.messages');
 
 const toggleMenu = () => {
   screenContainer.classList.toggle('userMenu__activeMenu');
-  userMenu.classList.toggle('opanicty-none')
+  userMenu.classList.toggle('d-none')
 }
 
 menuIcon.onclick = () => toggleMenu();

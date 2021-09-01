@@ -4,6 +4,11 @@ html {
   background-color: colors.$bodyBackground;
 }
 
+body {
+  overflow: hidden;
+  position: relative;
+}
+
 .d-none {
   position: absolute;
   opacity: 0;
