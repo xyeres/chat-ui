@@ -89,6 +89,7 @@ body {
 }
 
 .screen {
+  min-height: 100vh;
   position: relative;
   background-color: #ffffff;
 }
@@ -199,7 +200,6 @@ body {
 }
 
 .messages {
-  min-height: 100vh;
   padding: 0.5rem 1.5rem 0 1rem;
   background-color: #fffdff;
 }
