@@ -15,7 +15,8 @@
     color: colors.$bodyFont;
   }
 
-  &__userMenuToggle:hover {
+  &__userMenuToggle:hover,
+  &__userMenuToggle:active {
     color: colors.$lightPurple;
   }
 

@@ -46,17 +46,18 @@
     margin-left: 0.5rem;
     width: 20%;
 
-    &:hover {
+    &:hover,
+    &:active {
       background: colors.$lightPurple;
     }
   }
 
   &__btn:focus {
-    outline: dashed 3px colors.$lightPurple;
-    outline-width: 2;
+    outline: none;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
+    border: dashed 3px colors.$borderLightGray;
   }
 }
 
@@ -64,6 +65,7 @@
   transition: all 360ms ease-out;
 }
 
-.fa-paper-plane-o:hover {
+.fa-paper-plane-o:hover,
+.fa-paper-plane-o:active {
   transform: rotate(360deg)
 }

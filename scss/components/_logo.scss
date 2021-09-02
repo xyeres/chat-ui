@@ -26,11 +26,13 @@
     color: colors.$bodyFont;
   }
 
-  &__btn:hover {
+  &__btn:hover,
+  &__btn:active {
     color: colors.$lightPurple;
   }
 
-  &__icon:hover {
+  &__icon:hover,
+  &__icon:active {
     transform: rotate(720deg)
   }
 }
