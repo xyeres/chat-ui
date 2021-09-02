@@ -312,14 +312,14 @@ body {
   background-color: #5e1eca;
   transition: 410ms transform ease-in-out;
 }
+.logo__icon:hover, .logo__icon:focus, .logo__icon:active {
+  transform: rotate(720deg);
+}
 .logo__btn {
   color: #5a5d62;
 }
 .logo__btn:hover, .logo__btn:active {
   color: #8e55f0;
-}
-.logo__icon:hover, .logo__icon:active {
-  transform: rotate(720deg);
 }
 
 @media (min-width: 925px) {

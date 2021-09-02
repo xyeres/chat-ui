@@ -22,6 +22,12 @@
     transition: 410ms transform ease-in-out;
   }
 
+  &__icon:hover,
+  &__icon:focus,
+  &__icon:active {
+    transform: rotate(720deg)
+  }
+
   &__btn {
     color: colors.$bodyFont;
   }
@@ -29,10 +35,5 @@
   &__btn:hover,
   &__btn:active {
     color: colors.$lightPurple;
-  }
-
-  &__icon:hover,
-  &__icon:active {
-    transform: rotate(720deg)
   }
 }
