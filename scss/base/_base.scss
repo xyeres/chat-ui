@@ -12,11 +12,11 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    background: colors.$infoBarBackground;
+    background: colors.$borderLightGray;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: colors.$lightPurple;
+    background: colors.$bodyFont;
     border-radius: 40px;
   }
 }

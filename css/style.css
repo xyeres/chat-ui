@@ -74,10 +74,10 @@ body::-webkit-scrollbar {
   width: 0.2rem;
 }
 body::-webkit-scrollbar-track {
-  background: #fafafa;
+  background: #eeeef0;
 }
 body::-webkit-scrollbar-thumb {
-  background: #8e55f0;
+  background: #5a5d62;
   border-radius: 40px;
 }
 
@@ -110,7 +110,7 @@ body {
   width: 80%;
   border: solid 1px #a0a3a8;
   border-radius: 100px;
-  padding-left: 0.625rem;
+  padding-left: 0.925rem;
 }
 .inputBar__input:focus {
   outline: none;
@@ -144,26 +144,34 @@ body {
   -webkit-box-shadow: none;
 }
 
+.fa-paper-plane-o {
+  transition: all 360ms ease-out;
+}
+
+.fa-paper-plane-o:hover {
+  transform: rotate(360deg);
+}
+
 .infoBar {
   position: sticky;
   top: 0;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
+  background-color: #fffdff;
   border-bottom: solid 1px #eeeef0;
-  padding-bottom: 0.72rem;
-  background-color: #fafafa;
+  border-bottom: solid 4px #8e55f0;
 }
 .infoBar__userMenuToggle {
-  font-size: 1.25em;
-  color: #474c50;
+  font-size: 1.15em;
+  color: #5a5d62;
 }
 .infoBar__userMenuToggle:hover {
-  color: #5e1eca;
+  color: #8e55f0;
 }
 .infoBar__title {
   font-size: 1.25em;
-  color: #474c50;
+  font-weight: 500;
 }
 
 .message {
@@ -207,7 +215,7 @@ body {
   position: fixed;
   top: 0;
   right: -360px;
-  transition: all 105ms linear;
+  overflow: auto;
   min-width: 260px;
   height: 100%;
   padding: 1.5rem;
@@ -215,6 +223,7 @@ body {
   border-radius: 14px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  transition: all 105ms linear;
   box-shadow: 0px 6px 6px 2px rgba(0, 0, 0, 0.18);
   z-index: 1;
 }
@@ -241,9 +250,6 @@ body {
   font-size: 0.78em;
   font-weight: 900;
   margin-bottom: 1.25rem;
-}
-.activeUsers__title {
-  font-size: 1.25em;
 }
 
 .user {
@@ -341,20 +347,17 @@ body {
   .userMenu {
     position: sticky;
     overflow: auto;
-    transition: all 105ms linear;
+    transition: none;
     min-width: 28%;
-    max-width: 260px;
     height: 100vh;
     align-self: stretch;
     flex-grow: 1;
     padding: 1.5rem;
-    border: solid 1px lightgrey;
-    border-radius: 14px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
+    border-left: solid 1px lightgrey;
     box-shadow: none;
     z-index: 1;
+    max-width: 260px;
   }
 }
 

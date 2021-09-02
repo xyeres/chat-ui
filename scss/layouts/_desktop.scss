@@ -25,10 +25,6 @@
     overflow: auto;
   }
 
-  .screen {
-    // min-height: unset;
-  }
-
   .inputBar {
     margin-top: 3rem;
     bottom: 0px;
@@ -38,19 +34,16 @@
   .userMenu {
     position: sticky;
     overflow: auto;
-    transition: all 105ms linear;
+    transition: none;
     min-width: 28%;
-    max-width: 260px;
     height: 100vh;
     align-self: stretch;
     flex-grow: 1;
     padding: 1.5rem;
-    border: solid 1px lightgrey;
-    border-radius: 14px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
+    border-left: solid 1px lightgrey;
     box-shadow: none;
     z-index: 1;
+    max-width: 260px;
   }
 }

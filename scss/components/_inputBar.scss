@@ -20,7 +20,7 @@
     width: 80%;
     border: solid 1px colors.$asideFont;
     border-radius: 100px;
-    padding-left: 0.625rem;
+    padding-left: 0.925rem;
   }
 
   &__input:focus {
@@ -58,4 +58,12 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
   }
+}
+
+.fa-paper-plane-o {
+  transition: all 360ms ease-out;
+}
+
+.fa-paper-plane-o:hover {
+  transform: rotate(360deg)
 }

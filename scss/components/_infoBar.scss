@@ -3,24 +3,24 @@
 .infoBar {
   position: sticky;
   top: 0;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
+  background-color: colors.$messagesBackground;
   border-bottom: solid 1px colors.$borderLightGray;
-  padding-bottom: 0.72rem;
-  background-color: colors.$infoBarBackground;
+  border-bottom: solid 4px colors.$lightPurple;
 
   &__userMenuToggle {
-    font-size: 1.25em;
-    color: colors.$headingFont;
+    font-size: 1.15em;
+    color: colors.$bodyFont;
   }
 
   &__userMenuToggle:hover {
-    color: colors.$purple;
+    color: colors.$lightPurple;
   }
 
   &__title {
     font-size: 1.25em;
-    color: colors.$headingFont;
+    font-weight: 500;
   }
 }
