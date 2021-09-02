@@ -70,13 +70,16 @@ html {
 body {
   position: relative;
 }
-body::-webkit-scrollbar {
+
+*::-webkit-scrollbar {
   width: 0.2rem;
 }
-body::-webkit-scrollbar-track {
+
+*::-webkit-scrollbar-track {
   background: #eeeef0;
 }
-body::-webkit-scrollbar-thumb {
+
+*::-webkit-scrollbar-thumb {
   background: #5a5d62;
   border-radius: 40px;
 }
@@ -336,6 +339,10 @@ body {
 
   .messages {
     overflow: auto;
+  }
+
+  .dim {
+    border-left: solid 1px lightgrey;
   }
 
   .inputBar {

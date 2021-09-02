@@ -6,17 +6,17 @@ html {
 
 body {
   position: relative;
+}
 
-  &::-webkit-scrollbar {
-    width: 0.2rem;
-  }
+*::-webkit-scrollbar {
+  width: 0.2rem;
+}
 
-  &::-webkit-scrollbar-track {
-    background: colors.$borderLightGray;
-  }
+*::-webkit-scrollbar-track {
+  background: colors.$borderLightGray;
+}
 
-  &::-webkit-scrollbar-thumb {
-    background: colors.$bodyFont;
-    border-radius: 40px;
-  }
+*::-webkit-scrollbar-thumb {
+  background: colors.$bodyFont;
+  border-radius: 40px;
 }
