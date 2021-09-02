@@ -16,6 +16,12 @@
   }
 }
 
+@mixin for-large-desktop-up {
+  @media (min-width: 1240px) {
+    @content;
+  }
+}
+
 @mixin landscape-screens {
   @media (orientation: landscape) {
     @content;
