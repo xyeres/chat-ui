@@ -1,10 +1,6 @@
-@mixin for-tablet-portrait-up {
-  @media (min-width: 925px) {
-    @content;
-  }
-}
+@use '../abstracts/mixins';
 
-@include for-tablet-portrait-up {
+@include mixins.for-tablet-portrait-up {
 
   #menuClose,
   #menuOpen {

@@ -96,66 +96,6 @@ body {
   background-color: #ffffff;
 }
 
-.inputBar {
-  position: sticky;
-  bottom: 0px;
-  margin: 0 1rem;
-  padding: 1rem 0;
-  background-color: white;
-  border-top: solid 1px #eeeef0;
-}
-.inputBar__form {
-  display: flex;
-  min-height: 2.5rem;
-}
-.inputBar__input {
-  flex: 1;
-  width: 80%;
-  border: solid 1px #a0a3a8;
-  border-radius: 100px;
-  padding-left: 0.925rem;
-}
-.inputBar__input:focus {
-  outline: none;
-  outline-width: 0;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  border: dashed 3px #8e55f0;
-}
-.inputBar__btn {
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #5e1eca;
-  color: white;
-  padding: 5px;
-  display: inline-block;
-  border: none;
-  border-radius: 100px;
-  max-width: 86px;
-  margin-left: 0.5rem;
-  width: 20%;
-}
-.inputBar__btn:hover, .inputBar__btn:active {
-  background: #8e55f0;
-}
-.inputBar__btn:focus {
-  outline: none;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  border: dashed 3px #eeeef0;
-}
-
-.fa-paper-plane-o {
-  transition: all 360ms ease-out;
-}
-
-.fa-paper-plane-o:hover,
-.fa-paper-plane-o:active {
-  transform: rotate(360deg);
-}
-
 .infoBar {
   position: sticky;
   top: 0;
@@ -169,6 +109,7 @@ body {
 .infoBar__userMenuToggle {
   font-size: 1.15em;
   color: #5a5d62;
+  cursor: pointer;
 }
 .infoBar__userMenuToggle:hover, .infoBar__userMenuToggle:active {
   color: #8e55f0;
@@ -246,14 +187,18 @@ body {
 }
 
 .activeUsers {
-  margin-left: 0px;
-  padding: 0;
+  margin-top: 1rem;
 }
 .activeUsers__heading {
   text-transform: uppercase;
   font-size: 0.78em;
   font-weight: 900;
   margin-bottom: 1.25rem;
+}
+
+.users {
+  margin-left: 0px;
+  padding: 0;
 }
 
 .user {
@@ -326,7 +271,130 @@ body {
   color: #8e55f0;
 }
 
-@media (min-width: 925px) {
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.7em;
+  background: #5e1eca;
+  color: white;
+  padding: 7px 15px;
+  display: block;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.btn:hover, .btn:active {
+  background: #8e55f0;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border: dashed 3px #eeeef0;
+}
+
+.input {
+  flex: 1;
+  width: 100%;
+  border: solid 1px #a0a3a8;
+  border-radius: 100px;
+  padding-left: 0.925rem;
+}
+.input:focus {
+  outline: none;
+  outline-width: 0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border: dashed 3px #8e55f0;
+}
+
+.inputBar {
+  position: sticky;
+  bottom: 0px;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  background-color: white;
+  border-top: solid 1px #eeeef0;
+}
+.inputBar__form {
+  display: flex;
+  min-height: 2.5rem;
+}
+.inputBar__input {
+  width: 80%;
+}
+.inputBar__btn {
+  font-size: 1.05em;
+  max-width: 86px;
+  width: 20%;
+  padding: 5px;
+  margin-left: 0.5rem;
+}
+
+.fa-paper-plane-o {
+  transition: all 360ms ease-out;
+}
+
+.fa-paper-plane-o:hover,
+.fa-paper-plane-o:active {
+  transform: rotate(360deg);
+}
+
+.bg {
+  background-image: url("../img/city.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #c5e0dc;
+}
+
+.loginContainer {
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  padding-top: 20%;
+}
+
+@media (orientation: landscape) {
+  .loginContainer {
+    padding-top: 0;
+    padding: 2rem;
+  }
+}
+.login {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.login__input {
+  margin: 0.3rem 0;
+}
+.login__logo {
+  min-width: 180px;
+}
+.login__btn {
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+.logout__btn {
+  color: #5a5d62;
+  background-color: white;
+  border: dashed 3px #eeeef0;
+  transition: 90ms background-color ease-in-out;
+}
+.logout__btn:hover, .logout__btn:active, .logout__btn:focus {
+  color: white;
+}
+
+@media (min-width: 800px) {
   #menuClose,
 #menuOpen {
     display: none;

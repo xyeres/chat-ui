@@ -5,241 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat UI</title>
+  <title>Socketchat Login</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/6562e0dbff.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="main.js"></script>
 </head>
 
-<body>
-  <div class="col">
-    <section class="userMenu">
-      <div class="logo">
-        <a role="button" tabindex="0" class="logo__icon"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+<body class="bg">
+  <div class="loginContainer">
+    <main class="login">
+      <div class="logo login__logo">
+        <a role="button" tabindex="0" class="logo__icon" aria-label="socketchat logo"><i class="fa fa-comments-o"
+            aria-hidden="true"></i></a>
         <div class="logo__title">Socketchat</div>
-        <i class="fa fa-times logo__btn" id="menuClose" role="button" tabindex="0" aria-hidden="true"></i>
       </div>
-      <div class="infoBar__title">tea-tasting</div>
-      <ul class="activeUsers">
-        <p class="activeUsers__heading">Online — 5</p>
-        <!-- Users -->
-        <li class="user">
-          <div class="user__userImage">
-            <i class="user__onlineIcon" aria-hidden="true"></i>
-            <img src="img/profiles/peacock.png" alt="user #231">
-          </div>
-          <div class="user__detail">
-            <div class="user__header">
-              <div class="user__name">farmerleaf</div>
-            </div>
-          </div>
-        </li>
-        <li class="user">
-          <div class="user__userImage">
-            <i class="user__onlineIcon" aria-hidden="true"></i>
-            <img src="img/profiles/squid.png" alt="user #231">
-          </div>
-          <div class="user__detail">
-            <div class="user__header">
-              <div class="user__name">tea.log</div>
-            </div>
-          </div>
-        </li>
-        <li class="user">
-          <div class="user__userImage">
-            <i class="user__onlineIcon" aria-hidden="true"></i>
-            <img src="img/profiles/map.png" alt="user #231">
-          </div>
-          <div class="user__detail">
-            <div class="user__header">
-              <div class="user__name">javaes</div>
-            </div>
-          </div>
-        </li>
-        <li class="user">
-          <div class="user__userImage">
-            <i class="user__onlineIcon" aria-hidden="true"></i>
-            <img src="img/profiles/building.png" alt="user #231">
-          </div>
-          <div class="user__detail">
-            <div class="user__header">
-              <div class="user__name">Till We Have Faces</div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <div class="dim">
-      <main class="screen">
-        <!-- Info bar -->
-        <nav class="infoBar">
-          <div class="infoBar__title">tea-tasting</div>
-          <div class="infoBar__userMenuToggle" id="menuOpen"><i class="fa fa-users" aria-hidden="true"></i></div>
-        </nav>
-        <div class="containerContainer">
-          <div class="desktopContainer">
-            <!-- Messages -->
-            <section class="messages">
-              <div class="message">
-                <img src="img/profiles/building.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">Till We Have Faces
-                    </div>
-                    <div class="message__timestamp">07/14/2021</div>
-                  </div>
-                  <div class="message__text">Has anyone else tried the 2021 Yi Dui maocha? I had some recently and loved
-                    it.
-                    Much better than the 2020 Shengtai
-                    maocha.</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/map.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">javaes
-                    </div>
-                    <div class="message__timestamp">07/18/2021</div>
-                  </div>
-                  <div class="message__text">Ao Ne me is a tea full of subtle character... Takes you by surprise</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/squid.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">tea.log
-                    </div>
-                    <div class="message__timestamp">07/25/2021</div>
-                  </div>
-                  <div class="message__text">
-                    I guess it’s a bit high in sulfate and chloride, generally if all values are below 20 and the total
-                    is
-                    below a 100 it
-                    should be fine!</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/ghost.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">SailorRik
-                    </div>
-                    <div class="message__timestamp">08/22/2021</div>
-                  </div>
-                  <div class="message__text">
-                    Enjoying my Dong Guo sample, on my third and final session. A nice bright young sheng. In later
-                    steeps
-                    getting a rich
-                    walnut like flavor. Anyone else finding that?</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/peacock.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">farmerleaf
-                    </div>
-                    <div class="message__timestamp">Tue, Aug 31 2:12</div>
-                  </div>
-                  <div class="message__text">Wow that's really taking tea seriously...</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/squid.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">Youzi
-                    </div>
-                    <div class="message__timestamp">07/12/2021</div>
-                  </div>
-                  <div class="message__text">
-                    Yes, check with #water, however I feel like to chloride is too much. Otherwise this is a good water
-                  </div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/plant.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">CallmeRocky
-                    </div>
-                    <div class="message__timestamp">07/12/2021</div>
-                  </div>
-                  <div class="message__text">
-                    Does that also impact what type of kettle you prefer to use? I imagine this takes a classic tetsubin
-                    out
-                    of the equation</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/ghost.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">farmerleaf
-                    </div>
-                    <div class="message__timestamp">07/12/2021</div>
-                  </div>
-                  <div class="message__text">
-                    sure! every piece of teaware you use will have an impact on the taste of tea. if i want a great tea
-                    experience, i'll use
-                    the fancy ware (testubin, teapot, cups...)</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/face.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">Phil from Yiwu Mountain Tea
-                    </div>
-                    <div class="message__timestamp">07/12/2021</div>
-                  </div>
-                  <div class="message__text">any suggestions what to taste first? let me know if you want to try a live
-                    session...</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/building.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">bullon
-                    </div>
-                    <div class="message__timestamp">07/07/2021</div>
-                  </div>
-                  <div class="message__text">
-                    I had it, I wouldn't consider it badly roasted :smil: It's not the best rougui but it's nice</div>
-                </div>
-              </div>
-              <div class="message">
-                <img src="img/profiles/owl.png" alt="user #231" class="message__userImage">
-                <div class="message__detail">
-                  <div class="message__header">
-                    <div class="message__userName">Tykal
-                    </div>
-                    <div class="message__timestamp">07/07/2021</div>
-                  </div>
-                  <div class="message__text">
-                    I see. Thanks for the replies! I think the problem is I hate smoky tea, even a hint of smoke. And
-                    heavy
-                    roast tastes smoky. Had
-                    some rougui from OWT and a few others a friend who's into yancha plied me with.</div>
-                </div>
-              </div>
-            </section>
-      </main>
-      <!-- Input Bar -->
-      <section class="inputBar">
-        <form class="inputBar__form" action="#" method="post">
-          <input type="text" class="inputBar__input" name="message" id="message" placeholder="Message tea-tasting">
-          <button class="btn inputBar__btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-        </form>
-      </section>
-    </div>
+      <form action="chat.html" class="login__form">
+        <input type="text" placeholder="Nickname" name="user" id="user" class="input login__input form__user" autofocus>
+        <input type="text" placeholder="Room to join" name="room" id="room" class="input login__input form__room">
+        <button type="submit" role="button" tabindex="0" class="btn login__btn">Join Chat</button>
+      </form>
+    </main>
   </div>
 </body>
 
