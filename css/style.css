@@ -313,12 +313,16 @@ body {
   transition: 410ms transform ease-in-out;
 }
 .logo__icon:hover, .logo__icon:focus, .logo__icon:active {
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   transform: rotate(720deg);
 }
 .logo__btn {
   color: #5a5d62;
 }
-.logo__btn:hover, .logo__btn:active {
+.logo__btn:hover, .logo__btn:focus, .logo__btn:active {
   color: #8e55f0;
 }
 

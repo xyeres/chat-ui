@@ -25,6 +25,10 @@
   &__icon:hover,
   &__icon:focus,
   &__icon:active {
+    outline: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     transform: rotate(720deg)
   }
 
@@ -33,6 +37,7 @@
   }
 
   &__btn:hover,
+  &__btn:focus,
   &__btn:active {
     color: colors.$lightPurple;
   }
