@@ -23,6 +23,7 @@
 
   .dim {
     border-left: solid 1px lightgrey;
+    flex-grow: 1;
   }
 
   .inputBar {
@@ -35,7 +36,6 @@
     position: sticky;
     overflow: auto;
     transition: none;
-    min-width: 28%;
     height: 100vh;
     align-self: stretch;
     flex-grow: 1;
@@ -44,6 +44,6 @@
     border-left: solid 1px lightgrey;
     box-shadow: none;
     z-index: 1;
-    max-width: 260px;
+    max-width: 300px;
   }
 }

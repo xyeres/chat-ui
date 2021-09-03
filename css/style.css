@@ -109,6 +109,7 @@ body {
   background-color: #fffdff;
   border-bottom: solid 1px #eeeef0;
   border-bottom: solid 4px #8e55f0;
+  z-index: 1;
 }
 .infoBar__userMenuToggle {
   font-size: 1.15em;
@@ -156,7 +157,7 @@ body {
 }
 
 .messages {
-  padding: 0.5rem 1.5rem 0 1rem;
+  padding: 0.95rem 1.5rem 0 1rem;
   background-color: #fffdff;
 }
 
@@ -165,7 +166,7 @@ body {
   top: 0;
   right: -360px;
   overflow: auto;
-  min-width: 260px;
+  max-width: 265px;
   height: 100%;
   padding: 1.5rem;
   background-color: white;
@@ -420,6 +421,7 @@ body {
 
   .containerContainer {
     max-width: 100%;
+    max-width: 100%;
   }
 
   .messages {
@@ -428,6 +430,7 @@ body {
 
   .dim {
     border-left: solid 1px lightgrey;
+    flex-grow: 1;
   }
 
   .inputBar {
@@ -440,7 +443,6 @@ body {
     position: sticky;
     overflow: auto;
     transition: none;
-    min-width: 28%;
     height: 100vh;
     align-self: stretch;
     flex-grow: 1;
@@ -449,7 +451,7 @@ body {
     border-left: solid 1px lightgrey;
     box-shadow: none;
     z-index: 1;
-    max-width: 260px;
+    max-width: 300px;
   }
 }
 
