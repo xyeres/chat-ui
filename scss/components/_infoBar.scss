@@ -9,6 +9,7 @@
   background-color: colors.$messagesBackground;
   border-bottom: solid 1px colors.$borderLightGray;
   border-bottom: solid 4px colors.$lightPurple;
+  z-index: 1;
 
   &__userMenuToggle {
     font-size: 1.15em;
